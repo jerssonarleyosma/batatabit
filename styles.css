@@ -1,0 +1,85 @@
+:root {
+    /* colores */
+    --Linear-BG: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    --Bitcoin-Orange: #F7931A;
+    --Soft-Orange: #FFE9D5;
+    --Secondary-Blue: #1A9AF7;
+    --Soft-Blue: #E7F5FF;
+    --Warm-Black: #201E1C;
+    --Warm-Black1: #282623;
+    --Grey: #BABABA;
+    --Off-White: #FAF8F7;
+    --Just-White: #ffffff;
+}
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html {
+    font-size: 65.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+header {
+    position: relative;
+    height: 295px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--Linear-BG);
+}
+.header__logo {
+    margin: 39px 0 33px;
+}
+header section{
+    display: flex;
+    flex-direction: column;
+}
+header h1 {
+    width: 288px;
+    align-self: center;
+    margin-bottom: 24px;
+    text-align: center;
+    color: var(--Just-White);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 26px;
+}
+header p {
+    width: 288px;
+    align-self: center;
+    text-align: center;
+    color: var(--Soft-Orange);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 18px;
+}
+.header__bottom {
+    position: absolute;
+    order: 1;
+    top: 268px;
+    width: 237px;
+    height: 48px;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--Warm-Black);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 18.23px;
+    background-color: var(--Off-White);
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.header__bottom span {
+    display: inline-block;
+    width: 12px;
+    height: 7.41px;
+    margin-left: 14px;
+    background-image: url('./ASSETS/icons/mdi_keyboard_arrow_down.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+/* width: 288px;
+height: 78px; */
