@@ -71,6 +71,7 @@ header p {
     background-color: var(--Off-White);
     border-radius: 4px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    z-index: 1;
 }
 .header__bottom span {
     display: inline-block;
@@ -85,13 +86,14 @@ header p {
 /* fin del header */
 
 /* inicio del main */
-/* primera seccion */
 .index__main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+/* primera seccion */
 .main__info-section {
+    position: relative;
     width: 100%;
     height: 778px;
     display: flex;
@@ -127,4 +129,99 @@ header p {
     font-weight: 500;
     line-height: 18px;
     color: var(--Grey2);
+}
+/* inicio de la tabla de esta seccion */
+.main__table-container .main__table-one h3{
+    margin: 0 15px 12px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 23.44px;
+    color: var(--Bitcoin-Orange);
+}
+.main__table-container td {
+    width: 101px;
+    height: 39px;
+    padding: 10px 12px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--Just-White);
+}
+.main__table-container .file-one {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19.36px;
+    color: var(--Grey);
+}
+.main__table-container .file-two {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: center;
+    color: var(--Grey2);
+}
+.main__table-container table span {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+.row-red {
+    margin-left: 10px;
+    background-image: url('./ASSETS/icons/trending-down.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+}
+.row-green {
+    margin-left: 10px;
+    background-image: url('./ASSETS/icons/trending-up.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+}
+.top-left-radius {
+    border-radius: 8px 0 0 0;
+}
+.top-right-radius {
+    border-radius: 0 8px 0 0;
+}
+.bottom-left-radius {
+    border-radius: 0 0 0 8px;
+}
+.bottom-right-radius {
+    border-radius: 0 0 8PX 0;
+}
+/* fin de la tabla */
+.upgrade-date {
+    width: 173px;
+    height: 31px;
+    margin: 16px auto 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Soft-Orange);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    line-height: 14.52PX;
+    color: var(--Warm-Black1);
+}
+.upgrade-date P {
+    font-weight: 400;
+}
+.upgrade-date span {
+    font-weight: 700;
+}
+.batata-image {
+    position: absolute;
+    bottom: -10.7px;
+    width: 37.45px;
+    height: 24.01px;
+    background-image: url('./ASSETS/images/logo-batatabit2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main__benefits {
+    width: 100%;
+    height: 893px;
+    background-color: var(--Warm-Black);
 }
