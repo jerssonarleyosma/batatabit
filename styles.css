@@ -20,6 +20,7 @@
 html {
     font-size: 65.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 /* inicio del header */
 header {
@@ -168,14 +169,14 @@ header p {
     background-image: url('./ASSETS/icons/trending-down.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;    
+    background-position: center;
 }
 .row-green {
     margin-left: 10px;
     background-image: url('./ASSETS/icons/trending-up.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;    
+    background-position: center;
 }
 .top-left-radius {
     border-radius: 8px 0 0 0;
@@ -273,5 +274,44 @@ header p {
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 18px;
+    color: var(--Grey2);
+}
+/* fin de la seccion de beneficios */
+/* inicio a la seccion de imagen bitcoin baby */
+.image-section {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    background-image: url('/ASSETS/images/bitcoinbaby.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.image-section__tittle {
+    margin-top: 64px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 26px;
+    color: var(--Just-White);
+}
+/* fin de la seccion de imagen */
+/* inicio de la seccion de planes */
+.plans-section h2 {
+    width: 288px;
+    margin: 64px 0 24px 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+}
+.plans-section p {
+    width: 288px;
+    margin-bottom: 50px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
     color: var(--Grey2);
 }
