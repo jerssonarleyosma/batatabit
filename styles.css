@@ -131,13 +131,32 @@ header p {
     line-height: 18px;
     color: var(--Grey2);
 }
-/* inicio de la tabla de esta seccion */
+/* inicio de la tablas de esta seccion */
+.main__table-container {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+/* este the one se hace con el fin de agregar otro contenedor porque no se mantenia en un tamaño fijo */
+.theone {
+    width: 220px;
+    margin: 0 80px;
+}
+.main__table-container .main__table-one {
+    width: 210px;
+    scroll-snap-align: center;
+}
 .main__table-container .main__table-one h3{
     margin: 0 15px 12px;
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 23.44px;
     color: var(--Bitcoin-Orange);
+}
+.main__table-container .main__table-one--blue h3{
+    color: var(--Secondary-Blue);
 }
 .main__table-container td {
     width: 101px;
@@ -220,6 +239,9 @@ header p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.main__table-one--blue .upgrade-date {
+    background-color: var(--Soft-Blue);
 }
 /* fin de la primera seccion */
 /* inicio de la segunda seccion */
@@ -356,7 +378,7 @@ header p {
     font-size: 5.2rem;
     line-height: 40.93px;
     color: var(--Warm-Black);
-    
+
 }
 .cards .card-price span {
     font-weight: 500;
@@ -413,3 +435,20 @@ header p {
 }
 /* fin de la seccion de planes */
 /* inicio del footer */
+footer {
+    height: 150px;
+    background-color: var(--Bitcoin-Orange);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer li {
+    list-style: none;
+}
+footer li a {
+    margin-bottom: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--Just-White);
+}
