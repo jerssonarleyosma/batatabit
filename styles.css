@@ -306,15 +306,15 @@ header p {
     height: 50vh;
     display: flex;
     justify-content: center;
-    background-image: url('./ASSETS/images/bitcoinbaby.svg');
+    background-image: url(https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/10/18/16345727785552.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .image-section__tittle {
-    margin-top: 64px;
-    font-size: 2.4rem;
-    font-weight: 700;
+    margin-top: 224px;
+    font-size: 5.4rem;
+    font-weight: 800;
     line-height: 26px;
     color: var(--Just-White);
 }
