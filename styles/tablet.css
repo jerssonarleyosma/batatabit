@@ -1,0 +1,32 @@
+header h1 {
+    width:  385px;
+}
+.main__table-container {
+    justify-content: space-evenly;
+    overflow-x: hidden;
+}
+.main__benefits {
+    height: 650px;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.section__cards {
+    margin-bottom: 40px;
+    width: 320px;
+    height: 160px;
+}
+.image-section__tittle {
+    margin-top: 40px;
+    font-size: 5.0rem;
+}
+.plans-card-container {
+    justify-content: space-evenly;
+    overflow-x: hidden;
+    
+}
+.cards {
+    margin: 0;
+}
